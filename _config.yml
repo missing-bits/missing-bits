@@ -1,0 +1,7 @@
+# Site settings
+title: Missing Bits
+email: contact@missing-bits.co
+url: "http://missing-bits.co"
+
+# Build settings
+markdown: kramdown
