@@ -1,6 +1,17 @@
-.vertical-align {
-    display: flex;
-    align-items: center;
+.centering {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vertical-center {
+  display: flex;
+  align-items: center;
+}
+
+.img-center {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 html, body {
@@ -10,18 +21,22 @@ html, body {
 
 body {
   background: url('/assets/subtle_surface.png');
+  padding-bottom: $navbar-height;
+}
 
-  .container[role='main'] {
-    height: inherit;
-    @extend .vertical-align;
-  }
+.container[role='main'] {
+  @extend .full-height;
+}
+
+.full-height {
+  height: 100%;
 }
 
 .footer {
   @extend .navbar;
   @extend .navbar-default;
   @extend .navbar-fixed-bottom;
-  @extend .vertical-align;
+  @extend .centering;
 }
 
 .footer-container {
